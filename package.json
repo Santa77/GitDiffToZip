@@ -1,0 +1,19 @@
+{
+  "name": "GitDiffToZip",
+  "version": "1.0.0",
+  "description": "Zips changed files from two Git commits into a single archive.",
+  "bin": {
+    "gdtz": "./index.js"
+  },
+  "scripts": {
+    "build:win": "pkg . --target node16-win-x64 --output build/gdtz.exe",
+    "build:linux": "pkg . --target node16-linux-x64 --output build/gdtz-linux",
+    "build:mac": "pkg . --target node16-macos-x64 --output build/gdtz-macos"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  }
+}

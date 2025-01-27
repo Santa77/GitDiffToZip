@@ -1,0 +1,25 @@
+# Node.js závislosti
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# Logy a temporary súbory
+*.log
+*.tmp
+
+# Výstupné súbory pkg (binárky)
+build/gdtz.exe
+build/gdtz-linux
+build/gdtz-macos
+
+# ZIPy alebo iné archívy
+*.zip
+*.tar
+*.gz
+
+# MacOS špecifické
+.DS_Store
+
+# Windows špecifické
+Thumbs.db
