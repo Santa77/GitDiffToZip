@@ -39,7 +39,7 @@ function getTimestamp() {
 const timeStamp = getTimestamp();
 
 // Výsledný názov ZIP archívu
-const outputZip = `changes_${commitFrom}_${commitTo}_${timeStamp}.zip`;
+const outputZip = `changes_${timeStamp}_${commitFrom}_${commitTo}.zip`;
 
 console.log(`Vytváram ZIP súbor: ${outputZip}`);
 

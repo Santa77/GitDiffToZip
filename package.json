@@ -1,6 +1,6 @@
 {
   "name": "GitDiffToZip",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Zips changed files from two Git commits into a single archive.",
   "bin": {
     "gdtz": "./index.js"
