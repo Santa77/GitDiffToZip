@@ -1,0 +1,34 @@
+# Build outputs
+build/
+
+# Tests
+__tests__/
+*.test.js
+*.spec.js
+coverage/
+
+# Configuration
+.eslintrc.json
+.prettierrc.json
+.prettierignore
+jest.config.js
+
+# Development
+.vscode/
+.idea/
+
+# GitHub
+.github/
+
+# Archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+.DS_Store
+Thumbs.db
