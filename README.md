@@ -15,7 +15,22 @@ A lightweight **Git Diff to Zip** CLI tool that quickly bundles only the **chang
 
 ## Installation
 
-### Option 1: Clone and Install (for development)
+### Option 1: Install as Global Command (Recommended)
+
+```bash
+git clone https://github.com/Santa77/GitDiffToZip.git
+cd GitDiffToZip
+npm install -g .
+```
+
+After installation, the `gdtz` command will be available globally from anywhere:
+
+```bash
+gdtz --version
+gdtz --help
+```
+
+### Option 2: Clone and Install (for development)
 
 ```bash
 git clone https://github.com/Santa77/GitDiffToZip.git
@@ -23,7 +38,9 @@ cd GitDiffToZip
 npm install
 ```
 
-### Option 2: Use Pre-built Binaries
+Then run with `node index.js` or `npx gdtz`.
+
+### Option 3: Use Pre-built Binaries
 
 Download the latest binaries from the [Releases](https://github.com/Santa77/GitDiffToZip/releases) page.
 
