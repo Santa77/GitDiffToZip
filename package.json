@@ -29,7 +29,6 @@
     "tool"
   ],
   "author": "GitDiffToZip Contributors",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Santa77/GitDiffToZip.git"

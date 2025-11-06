@@ -3,8 +3,8 @@ name: Build and Release
 on:
   push:
     tags:
-      - "v*.*.*" # spustï¿½ sa, keï¿½ pushneï¿½ tag vo formï¿½te vX.Y.Z (napr. v1.0.0)
-  # Alebo ak chceï¿½ manuï¿½lne spï¿½ï¿½ï¿½anie, pridaj:
+      - 'v*.*.*'    # spustí sa, keï pushneš tag vo formáte vX.Y.Z (napr. v1.0.0)
+  # Alebo ak chceš manuálne spúšanie, pridaj:
   workflow_dispatch:
 
 jobs:
@@ -15,13 +15,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      # Tu nainï¿½talujeme Node.js a budeme pouï¿½ï¿½vaï¿½ verziu 16/18/20 podï¿½a tvojho vï¿½beru
+      # Tu nainštalujeme Node.js a budeme pouíva verziu 16/18/20 pod¾a tvojho vıberu
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
 
-      # Nainï¿½talujeme zï¿½vislosti
+      # Nainštalujeme závislosti
       - name: Install dependencies
         run: npm install
 
@@ -37,21 +37,21 @@ jobs:
       - name: Build Mac
         run: npm run build:mac
 
-      # Vytvorenie / aktualizï¿½cia GitHub Release
+      # Vytvorenie / aktualizácia GitHub Release
       - name: Create GitHub Release
         id: create_release
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # Tag, ktorï¿½ spï¿½sobil spustenie
-          tag: ${{ github.ref_name }}
+          # Tag, ktorı spôsobil spustenie
+          tag: ${{ github.ref_name }} 
           name: ${{ github.ref_name }}
           draft: false
           prerelease: false
           body: |
-            Release vytvorenï¿½ automaticky.
+            Release vytvorenı automaticky.
 
-      # Nahrajeme buildovanï¿½ binï¿½rne sï¿½bory ako assets
+      # Nahrajeme buildované binárne súbory ako assets
       - name: Upload Release Assets
         uses: actions/upload-release-asset@v1
         with:

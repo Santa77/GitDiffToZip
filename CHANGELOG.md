@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- MIT License file
 - Comprehensive input validation
   - Git repository check
   - Commit existence validation
@@ -30,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated all console messages from Slovak to English
 - Improved package.json with complete metadata
-  - Added keywords, author, license, repository, bugs, homepage
+  - Added keywords, author, repository, bugs, homepage
   - Added engines field (Node.js >= 18.0.0)
   - Added test, lint, and format scripts
 - Updated Node.js target from node16 to node18 in build scripts

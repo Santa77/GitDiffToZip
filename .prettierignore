@@ -3,3 +3,4 @@ build/
 coverage/
 *.zip
 package-lock.json
+.github/

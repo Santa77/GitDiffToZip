@@ -1,6 +1,5 @@
 # Git Diff To Zip (gdtz)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org)
 
 A lightweight **Git Diff to Zip** CLI tool that quickly bundles only the **changed files** between two commits into a single **ZIP** archive. Perfect for seamless updates or partial deployments.
@@ -151,10 +150,6 @@ Some files might be deleted in the target commit. The tool will warn about these
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Issues & Feedback
 
